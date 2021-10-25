@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<style>
+background-image: url("background.jpg");
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+</style>
+<body>
+<div style="background-image: url('background.jpg');">
+<h3>fill in this form</h3>
+
+<div>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fullname" name="fullnamename" placeholder="Your name..">
+
+    <label for="lname">email</label>
+     <input type="text" name="email" size="20" maxlength="10">
+	<label for="age">age</label>
+	
+     <input type="text" name="age" size="20" maxlength="10">
+	 
+    <label for="gender">gender</label>
+	  <select id="gender" name="gender">
+      <option value="pria">pria</option>
+      <option value="wanita">wanita</option>
+      <option value="usa"></option>
+    </select>
+		<label for="start">Start date:</label>
+<input type="date" id="start" name="trip-start"
+       value="2018-07-22"
+       min="2018-01-01" max="2018-12-31">
+	<label for="laptop">laptop</label>
+    <select id="laptop" name="laptop">
+      <option value="asus">asus</option>
+      <option value="lenovo">lenovo</option>
+      <option value="usa"></option>
+    </select>
+
+<label for="number">number</label>
+	
+     <input type="text" name="number" size="20" maxlength="10">
+  <table style="width:100%">
+	<tr>
+	<td>payment
+	</td>
+	</tr>
+	
+	<tr>
+    <td><input type="radio" name="jns_kelamin" value="p" checked> 1x</td> 
+	<td><input type="radio" name="jns_kelamin" value="l"> 3x</td> 
+	<td><input type="radio" name="jns_kelamin" value="pew"> 6x</td>
+	<td><input type="radio" name="jns_kelamin" value="pew"> 12x</td>
+	</tr>
+	
+	<td><input type="checkbox" name="data" value="miss" > asus</td>
+	<td><input type="checkbox" name="data" value="mrs"> lenovo</td>
+	<td><input type="checkbox" name="data" value="mr" > acer</td>
+	<td><input type="checkbox" name="data" value="miss" > hp</td>
+
+	</tr>
+	</table>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
